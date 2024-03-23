@@ -17,15 +17,6 @@ a.home:hover {
     text-decoration: underline;
 }
 
-a.home2 {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-a.home2:hover {
-    text-decoration: underline;
-}
-
 .reading {
     color: #000000;
     font-weight: bold;
@@ -65,24 +56,6 @@ p.foot2 {
     right: 1%;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #dedede;
-}
-
-th, td {
-    text-aglin: left;
-    padding: 12px;
-    border: 1px solid #dedede;
-}
-
-tr:nth-child(even) {
-    background-color: #787878;
-    color: #ffffff;
-}
-
-.stories {
+.margin1 {
     margin-left: 3%;
 }
