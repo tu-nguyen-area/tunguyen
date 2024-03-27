@@ -1,5 +1,5 @@
 body {
-    background-color: #f6f6fa;
+    background-color: #fae1c8;
     max-width: 96%;
     margin: auto;
 }
@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 
-a.home {
+.home {
     color: #000000;
     text-decoration: none;
 }
@@ -17,7 +17,7 @@ a.home:hover {
     text-decoration: underline;
 }
 
-a.home2 {
+.home2 {
     color: #ffffff;
     text-decoration: none;
 }
@@ -41,7 +41,7 @@ a.home2:hover {
     justify-content: center;
 }
 
-a.main-nav {
+.main-nav {
     color: #000000;
     text-decoration: none;
     margin-left: 5%;
@@ -52,14 +52,14 @@ a.main-nav:hover {
     text-decoration: underline;
 }
 
-p.foot {
+.foot {
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-p.foot2 {
+.foot2 {
     position: fixed;
     bottom: 0;
     right: 1%;
