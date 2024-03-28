@@ -1,0 +1,66 @@
+body {
+    background-color: #000000;
+}
+
+h1 {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.home {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+.home-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    top: 0%;
+}
+
+.home2 {
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    text-align: center;
+}
+
+.home3 {
+    top: 12%;
+}
+
+.home4 {
+    top: 16%;
+}
+
+.home5 {
+    color: #00ff00;
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    margin-left: 3%;
+}
+
+.foot {
+    color: #00ff00;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.foot2 {
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+}
+
