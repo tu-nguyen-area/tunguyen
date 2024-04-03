@@ -44,10 +44,7 @@ a.main-nav:hover {
 }
 
 .foot {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .foot2 {
@@ -68,4 +65,8 @@ a.main-nav:hover {
 
 .img-co {
     padding-left: 5%;
+}
+
+.index-hr {
+    border: 1px solid #000000;
 }
