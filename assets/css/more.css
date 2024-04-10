@@ -53,10 +53,7 @@ a.main-nav:hover {
 }
 
 .foot {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .foot2 {
@@ -86,3 +83,8 @@ tr:nth-child(even) {
 .stories {
     margin-left: 3%;
 }
+
+.index-hr {
+    border: 1px solid #000000;
+}
+

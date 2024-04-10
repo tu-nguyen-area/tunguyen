@@ -44,10 +44,7 @@ a.main-nav:hover {
 }
 
 .foot {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .foot2 {
@@ -59,3 +56,8 @@ a.main-nav:hover {
 .ul-nav {
     list-style-type: none;
 }
+
+.index-hr {
+    border: 1px solid #000000;
+}
+
