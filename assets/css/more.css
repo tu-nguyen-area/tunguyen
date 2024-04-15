@@ -80,11 +80,12 @@ tr:nth-child(even) {
     color: #ffffff;
 }
 
-.stories {
-    margin-left: 3%;
-}
-
 .index-hr {
     border: 1px solid #000000;
 }
 
+.sobi {
+    border: 1px solid #000000;
+    margin: 1%;
+    padding: 1%;
+}
