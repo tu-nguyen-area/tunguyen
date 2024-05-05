@@ -60,3 +60,25 @@ body {
 .index-read:hover {
     text-decoration: underline;
 }
+
+.pink-link {
+    color: #fd00ff;
+    text-decoration: none;
+}
+
+.pink-link:hover {
+    text-decoration: underline;
+}
+
+.pink {
+    color: #ffff00;
+}
+
+.yellow-link {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+.yellow-link:hover {
+    text-decoration: underline;
+}
