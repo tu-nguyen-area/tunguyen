@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tu Nguyen</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/hash.css">
+</head>
+<body>
+    <header>
+        <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
+    </header>
+
+    <hr>
+    <nav>
+        <ul class="main-nav">
+            <a class="main-nav" href="comp.html">Computer</a>
+            <a class="main-nav" href="tech.html">Technology</a>
+            <a class="main-nav" href="sci.html">Science</a>
+            <a class="main-nav" href="art.html">Art</a>
+            <a class="main-nav" href="more.html">More</a>
+        </ul>
+    </nav>
+    <hr>
+
+    <section>
+        <h3>Cryptographic hash function</h3>
+    </section>
+
+    <section>
+            <p>Hashing</p>
+            <input type="text" id="tinput" size="120" name="iname" placeholder="Input" onfocus="this.value=''"></input><br><br>
+            <button type="button" onclick="md5Processing()">MD5</button>
+            <button type="button" onclick="sha256Processing()">SHA256</button>
+            <button type="button" onclick="sha3256Processing()">Keccak256</button>
+            <button type="button" onclick="sha3Processing()">Keccak512</button>
+    <br><br>
+            <input type="text" id="toutput" size="120" name="oname" placeholder="Output" disabled></input>
+    </section>
+
+    <section>
+    </section>
+
+    <hr class="index-hr">
+
+    <footer>
+        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
+        <p class="foot2"><a href="hash.html" class="home">Back to top</a></p>
+    </footer>
+
+    <script src="assets/js/hash.js"></script>
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/md5.js"></script>
+    <script src="assets/js/sha256.js"></script>
+    <script src="assets/js/x64-core.js"></script>
+    <script src="assets/js/sha3.js"></script>
+
+</body>
+</html>
