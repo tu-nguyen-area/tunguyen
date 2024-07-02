@@ -28,13 +28,15 @@
 
     <section>
             <p>Hashing</p>
-            <input type="text" id="tinput" size="120" name="iname" placeholder="Input" onfocus="this.value=''"></input><br><br>
+            <input type="text" id="tinput" size="120" name="iname" placeholder="Input" onfocus="this.value=''" />
+            <button type="button" onclick="copyProcess()">Copy</button><br><br>
+
             <button type="button" onclick="md5Processing()">MD5</button>
             <button type="button" onclick="sha256Processing()">SHA256</button>
-            <button type="button" onclick="sha3256Processing()">Keccak256</button>
-            <button type="button" onclick="sha3Processing()">Keccak512</button>
+            <button type="button" onclick="sha3256Processing()">SHA3-Keccak256</button>
+            <button type="button" onclick="sha3Processing()">SHA3-Keccak512</button>
     <br><br>
-            <input type="text" id="toutput" size="120" name="oname" placeholder="Output" disabled></input>
+            <input type="text" id="toutput" size="120" name="oname" placeholder="Output" disabled />
     </section>
 
     <section>
@@ -43,7 +45,7 @@
     <hr class="index-hr">
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&copy; 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
         <p class="foot2"><a href="hash.html" class="home">Back to top</a></p>
     </footer>
