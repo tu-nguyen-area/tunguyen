@@ -5,6 +5,13 @@ function copyProcess() {
     alert("Copied the text: " + copyText.value);
 }
 
+function copProcess() {
+    let copText = document.getElementById("toutput");
+    copText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copText.value);
+    alert("Copied the text: " + copText.value);
+}
+
 function md5Processing() {
     let hash = document.getElementById("tinput").value;
     let md5hash = CryptoJS.MD5(hash);
