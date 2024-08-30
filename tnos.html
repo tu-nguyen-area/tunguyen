@@ -29,6 +29,7 @@
         <p>Inspired by <a href="https://archlinux.org/" class="home">Arch Linux</a></p>
         <p>For testing, please extract and chroot</p>
         <p>For installation support, please contact via email or read <a href="https://www.linuxfromscratch.org/lfs/" class="home">the documentation</a></p>
+        <p><a href="#installs" class="home">How to install?</a></p>
     </section>
 
     <br>
@@ -76,6 +77,21 @@
             <a href="https://drive.google.com/file/d/1rKUVtK5vgFfaZof3UhEVr8IMGSxNJmwy/view" target="_blank" class="home sobi">Source tarball</a>
             <a href="https://drive.google.com/file/d/1xTDtXPD5D_ejMQuvbWGGq4rldm6yUZGi/view" target="_blank" class="home sobi">Build system file</a>
         </p>
+    </section>
+
+   <br>
+
+    <section id="installs">
+        <h4>How to install? (For POWER user, NOT RECOMMENDED for NORMAL users. YOU ARE WARNED!)</h4>
+        <p>1. Extract to a partition</p>
+        <p>2. Mount /dev /pts /proc /sys /run</p>
+        <p>3. Chroot to the partition</p>
+        <p>4. Mount a partition to /boot/efi</p>
+        <p>5. Mount /efivarfs</p>
+        <p>6. Install and configure grub</p>
+        <p>7. Edit /etc/fstab</p>
+        <p>8. Edit MAC Address in folder /etc/systemd/network</p>
+        <p>9. Logout and Reboot, Login by Default Account: root - Password: root</p>
     </section>
 
     <hr class="index-hr">
