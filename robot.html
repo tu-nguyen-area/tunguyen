@@ -18,8 +18,14 @@
     </section>
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&copy <span id="yearn"></span> Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot2"><a href="red-pill.html" class="home">Back to home</a></p>
     </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+    </script>
+
 </body>
 </html>

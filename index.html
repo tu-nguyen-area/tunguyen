@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+
     <header>
         <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
     </header>
@@ -29,6 +30,7 @@
         <img src="assets/img/logo-white.svg" alt="pill" width="30%">
         <p>Writing for the possibility that one day I might lose my memory...</p>
         <h2>To all who come here: Wishing you all the best!</h2>
+        <p id="times"></p>
         <p><a href="comp.html" class="reading">Continue reading...</a></p>
         <!--<p><a href="index-vi.html" class="vns">Hoặc dùng phiên bản Tiếng Việt.</a></p>-->
     </section>
@@ -50,10 +52,22 @@
     <hr class="index-hr">
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&#169 <span id="yearn"></span> Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
         <p class="foot2"><a href="index.html" class="home">Back to top</a></p>
     </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+        getTime();
+
+        function getTime() {
+            var d = new Date()
+            document.getElementById("times").innerHTML = d
+            setTimeout(getTime, 1000);
+        }
+    </script>
 
 </body>
 </html>

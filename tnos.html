@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/more.css">
 </head>
 <body>
+
     <header>
         <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
     </header>
@@ -90,17 +91,22 @@
         <p>5. Mount /efivarfs</p>
         <p>6. Install and configure grub</p>
         <p>7. Edit /etc/fstab</p>
-        <p>8. Edit MAC Address in folder /etc/systemd/network</p>
+        <p>8. Edit MAC Address in folder /etc/systemd/network/</p>
         <p>9. Logout and Reboot, Login by Default Account: root - Password: root</p>
     </section>
 
     <hr class="index-hr">
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&#169 <span id="yearn"></span> Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
         <p class="foot2"><a href="tnos.html" class="home">Back to top</a></p>
     </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+    </script>
 
 </body>
 </html>

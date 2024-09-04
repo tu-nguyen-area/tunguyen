@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+
     <header>
         <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
     </header>
@@ -102,11 +103,15 @@
     <hr class="index-hr">
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&copy <span id="yearn"></span> Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
         <p class="foot2"><a href="quote.html" class="home">Back to top</a></p>
-
     </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+    </script>
 
 </body>
 </html>

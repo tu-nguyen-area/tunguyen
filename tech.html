@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/tech.css">
 </head>
 <body>
+
     <header>
         <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
     </header>
@@ -30,7 +31,7 @@
         <p><a href="#linux" class="home">GNU/Linux</a></p>
         <p><a href="#website" class="home">Website</a></p>
         <p><a href="#android" class="home">Android</a></p>
-        <p>Free and open-source software</p>
+        <p><a href="#foss" class="home">Free and open-source software</a></p>
     </section>
 
     <section id="linux">
@@ -48,7 +49,7 @@
         <p>Android is a mobile operating system based on a modified version of the Linux kernel.</p>
     </section>
 
-    <section>
+    <section id="foss">
         <h3>Free and open-source software</h3>
         <p>Free and open-source software (FOSS) is software that is available under a license that grants the right to use, modify, and distribute the software, modified or not, to everyone free of charge. The public availability of the source code is, therefore, a necessary but not sufficient condition. FOSS is an inclusive umbrella term for free software and open-source software. FOSS is in contrast to proprietary software, where the software is under restrictive copyright or licensing and the source code is hidden from the users.</p>
     </section>
@@ -61,6 +62,8 @@
 
     <section>
         <p><a href="https://en.wikipedia.org/wiki/Arm_Holdings" class="home">Arm Holdings</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Intel" class="home">Intel</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Valve_Corporation" class="home">Valve Corporation</a></p>
     </section>
 
     <section>
@@ -82,10 +85,15 @@
         <p><a href="https://en.wikipedia.org/wiki/Next.js" class="home">NextJS</a></p>
         <p><a href="https://en.wikipedia.org/wiki/Nuxt.js" class="home">NuxtJS</a></p>
         <p><a href="https://en.wikipedia.org/wiki/Gatsby_(software)" class="home">Gatsby</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/JSON-LD" class="home">JSON-LD</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Linked_data" class="home">Linked data</a></p>
     </section>
 
     <section>
         <p><a href="https://en.wikipedia.org/wiki/Steve_Jobs" class="home">Steve Jobs</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Bill_Gates" class="home">Bill Gates</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Gordon_Moore" class="home">Gordon Moore</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Andrew_Grove" class="home">Andrew Grove</a></p>
     </section>
 
     <section>
@@ -101,10 +109,15 @@
     <hr class="index-hr">
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&#169 <span id="yearn"></span> Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
         <p class="foot2"><a href="tech.html" class="home">Back to top</a></p>
     </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+    </script>
 
 </body>
 </html>

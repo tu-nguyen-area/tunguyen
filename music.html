@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/more.css">
 </head>
 <body>
+
     <header>
         <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
     </header>
@@ -109,7 +110,7 @@
             <tr>
                 <td><a href="https://www.youtube.com/watch?v=AbWBviQCMEE" class="home">In The Air Tonight</a></td>
                 <td><a href="https://en.wikipedia.org/wiki/Phil_Collins" class="home">Phil Collins</a></td>
-                <td>Soft rock, Alternative/Indie, Pop, Rock, Deep House</td>
+                <td>Soft rock, Pop, Rock, Deep House</td>
             </tr>
             <tr>
                 <td><a href="https://www.youtube.com/watch?v=eVTXPUF4Oz4" class="home2">In The End</a></td>
@@ -132,7 +133,8 @@
                 <td>Pop, Hip-Hop/Rap</td>
             </tr>
             <tr>
-                <td><a href="https://www.youtube.com/watch?v=2b9AqJimM-0&list=PL_MHjKxnHz1vGIan1NvtfR1NLMk3qkG8j" class="home2">Back To The 80's</a></td>
+                <td><a href="https://www.youtube.com/watch?v=2b9AqJimM-0&list=PL_MHjKxnHz1vGIan1NvtfR1NLMk3qkG8j"
+                                                                        class="home2">Back To The 80's</a></td>
                 <td><a href="https://www.youtube.com/@ThePrimeThanatos" class="home2">ThePrimeThanatos</a></td>
                 <td>Synthwave, Retro Electro Music</td>
             </tr>
@@ -432,8 +434,8 @@
                 <td>Dance/Electronic, Deep house</td>
             </tr>
             <tr>
-                <td><a href="https://www.youtube.com/watch?v=qLg89_jE-RQ" class="home2">All Night</a></td>
-                <td>Paul Lock</td>
+                <td><a href="https://www.youtube.com/watch?v=L8JYdG4G9y8" class="home2">All Night</a></td>
+                <td><a href="https://www.youtube.com/channel/UCfPFUHl2bva9oz3bUEpi7cw" class="home2">Paul Lock</a></td>
                 <td>Dance/Electronic</td>
             </tr>
             <tr>
@@ -451,16 +453,55 @@
                 <td>C-Block</td>
                 <td>Dance/Electronic, Deep house</td>
             </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/watch?v=pL-apdaA14U" class="home2">You Work Wonders</a></td>
+                <td><a href="https://www.youtube.com/@marcphilippemusic" class="home2">Marc Philippe</a> & <a
+                       href="https://www.youtube.com/channel/UCfPFUHl2bva9oz3bUEpi7cw" class="home2">Paul Lock</a></td>
+                <td>Dance/Electronic</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/watch?v=i2FAIePCtYo" class="home">Deep House Mix 2024</a></td>
+                <td><a href="https://www.youtube.com/@deepmemories" class="home">Deep Memories</a></td>
+                <td>Dance/Electronic, Deep house</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/watch?v=7VEZNcxheaY" class="home2">Take My Hand</a></td>
+                <td>Housenick & Paul Lock</td>
+                <td>Dance/Electronic</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/watch?v=U6fwwnWPHzQ" class="home">My Fear</a></td>
+                <td>Paul Lock</td>
+                <td>Dance/Electronic, Deep house</td>
+            </tr>
         </table>
     </section>
 
+<!--
+            <tr>
+                <td><a href="#" class="home2"></a></td>
+                <td></td>
+                <td>Dance/Electronic</td>
+            </tr>
+
+            <tr>
+                <td><a href="#" class="home"></a></td>
+                <td></td>
+                <td>Dance/Electronic</td>
+            </tr>
+-->
     <hr class="index-hr">
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&copy <span id="yearn"></span> Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
         <p class="foot2"><a href="music.html" class="home">Back to top</a></p>
     </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+    </script>
 
 </body>
 </html>

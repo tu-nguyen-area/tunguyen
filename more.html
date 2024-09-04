@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/more.css">
 </head>
 <body>
+
     <header>
         <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
     </header>
@@ -99,21 +100,21 @@
                 <td><a href="https://en.wikipedia.org/wiki/MD5" class="home2">MD5</a></td>
                 <td><a href="https://en.wikipedia.org/wiki/Secure_Hash_Algorithms" class="home2">SHA</a></td>
             </tr>
-            <tr>
-                <td>Size</td>
-                <td>25 MB</td>
-                <td>Lower is Better</td>
-            </tr>
         </table>
     </section>
 
     <hr class="index-hr">
 
     <footer>
-        <p class="foot">&copy 2024 Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
+        <p class="foot">&copy <span id="yearn"></span> Vietnamese - Project Tu Nguyen - uvefmmh446810#hnbjm.dpn - uvefmmh446810#qspuponbjm.dpn</p>
         <p class="foot">Designed by Tu_Nguyen - Developed by Tu_Nguyen</p>
         <p class="foot2"><a href="more.html" class="home">Back to top</a></p>
     </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+    </script>
 
 </body>
 </html>
