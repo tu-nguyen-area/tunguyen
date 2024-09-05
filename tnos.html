@@ -88,10 +88,10 @@
             <p>tar -xf tnos-0.0.X-systemd.tar .</p>
         <h5>2. Mount /dev /pts /proc /sys /run</h5>
             <p>mount -v --bind /dev /(Path_to_folder_extract)/tnos/dev</p>
-            <p>mount -vt devpts devpts -o gid=5,mode=0620 /mnt/tnos/dev/pts</p>
-            <p>mount -vt proc proc /mnt/tnos/proc</p>
-            <p>mount -vt sysfs sysfs /mnt/tnos/sys</p>
-            <p>mount -vt tmpfs tmpfs /mnt/tnos/run</p>
+            <p>mount -vt devpts devpts -o gid=5,mode=0620 /(Path_to_folder_extract)/tnos/dev/pts</p>
+            <p>mount -vt proc proc /(Path_to_folder_extract)/tnos/proc</p>
+            <p>mount -vt sysfs sysfs /(Path_to_folder_extract)/tnos/sys</p>
+            <p>mount -vt tmpfs tmpfs /(Path_to_folder_extract)/tnos/run</p>
         <h5>3. Chroot to the partition</h5>
             <p>chroot /(Path_to_folder_extract)</p>
         <h5>4. Mount a partition to /boot/efi</h5>
