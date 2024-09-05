@@ -84,15 +84,46 @@
 
     <section id="installs">
         <h4>How to install? (For POWER user, NOT RECOMMENDED for NORMAL users. YOU ARE WARNED!)</h4>
-        <p>1. Extract to a partition</p>
-        <p>2. Mount /dev /pts /proc /sys /run</p>
-        <p>3. Chroot to the partition</p>
-        <p>4. Mount a partition to /boot/efi</p>
-        <p>5. Mount /efivarfs</p>
-        <p>6. Install and configure grub</p>
-        <p>7. Edit /etc/fstab</p>
-        <p>8. Edit MAC Address in folder /etc/systemd/network/</p>
-        <p>9. Logout and Reboot, Login by Default Account: root - Password: root</p>
+        <h5>1. Extract to a partition</h5>
+            <p>tar -xf tnos-0.0.X-systemd.tar .</p>
+        <h5>2. Mount /dev /pts /proc /sys /run</h5>
+            <p>mount -v --bind /dev /(Path_to_folder_extract)/tnos/dev</p>
+            <p>mount -vt devpts devpts -o gid=5,mode=0620 /mnt/tnos/dev/pts</p>
+            <p>mount -vt proc proc /mnt/tnos/proc</p>
+            <p>mount -vt sysfs sysfs /mnt/tnos/sys</p>
+            <p>mount -vt tmpfs tmpfs /mnt/tnos/run</p>
+        <h5>3. Chroot to the partition</h5>
+            <p>chroot /(Path_to_folder_extract)</p>
+        <h5>4. Mount a partition to /boot/efi</h5>
+            <p>mount /dev/sdaX /boot/efi</p>
+        <h5>5. Mount /efivarfs</h5>
+            <p>mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars</p>
+        <h5>6. Install and configure grub</h5>
+            <p>grub-install --target=x86_64-efi --removable</p>
+            <p>grub-install --bootloader-id=TNOS --recheck</p>
+            <p>grub-mkconfig -o /boot/grub/grub.cfg</p>
+        <h5>7. Edit /etc/fstab</h5>
+            <p>Example:</p>
+            <p><i>UUID=XXXX-XXXX /boot/efi vfat umask=0077 0 1</i></p>
+            <p><i>UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX none swap sw 0 0</i></p>
+            <p><i>UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX / ext4 errors=remount-ro 0 1</i></p>
+        <h5>8. Edit MAC Address in folder /etc/systemd/network/</h5>
+            <p>Example:</p>
+            <p><i>[Match]</i></p>
+            <p><i>MACAddress=XX:XX:XX:XX:XX:XX</i></p>
+            <p><i>[Link]</i></p>
+            <p><i>Name=enp0s3</i></p>
+            <br>
+            <p><i>[Match]</i></p>
+            <p><i>Name=enp0s3</i></p>
+            <p><i>[Network]</i></p>
+            <p><i>Address=XXX.XXX.XXX.XXX/24</i></p>
+            <p><i>Gateway=XXX.XXX.XXX.XXX</i></p>
+            <p><i>DNS=XXX.XXX.XXX.XXX</i></p>
+        <h5>9. Logout and Reboot, Login by Default Account: root - Password: root</h5>
+            <p>exit</p>
+            <p>umount -a</p>
+            <p>reboot</p>
     </section>
 
     <hr class="index-hr">
