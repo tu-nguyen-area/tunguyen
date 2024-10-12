@@ -36,4 +36,3 @@ function sha3Processing() {
     //let sha3hash = CryptoJS.SHA3(hash);
     document.getElementById("toutput").value = sha3hash;
 }
-
