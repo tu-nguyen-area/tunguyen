@@ -1,7 +1,7 @@
 body {
     background-image: url("../img/synthwave-background.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-color: #000000;
     max-width: 96%;
     margin: auto;
