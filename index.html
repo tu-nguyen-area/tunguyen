@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Tu Nguyen</title>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/x-icon" href="assets/img/logo-white.svg">
+      <link rel="stylesheet" href="assets/css/index.css">
+   </head>
+
+   <body>
+    <header>
+        <h1><a class="home" href="index.html">TU NGUYEN</a></h1>
+    </header>
+
+    <hr class="index-hr">
+    <nav>
+      <ul class="main-nav">
+        <a class="main-nav" href="comp.html">Computer</a>
+        <a class="main-nav" href="tech.html">Technology</a>
+        <a class="main-nav" href="sci.html">Science</a>
+        <a class="main-nav" href="art.html">Art</a>
+        <a class="main-nav" href="more.html">More</a>
+      </ul>
+    </nav>
+    <hr class="index-hr">
+
+    <section>
+        <h2>Welcome to our ship, Captain!</h2>
+        <p>Computer and something else...</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="assets/img/logo-white.svg" alt="pill" width="30%">
+            <video width="480" height="360" loop autoplay muted>
+                <source src="assets/vid/badapple.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>Writing for the possibility that one day I might lose my memory...</p>
+        <h2>To all who come here: Wishing you all the best!</h2>
+        <p id="times"></p>
+        <p><a href="comp.html" class="reading">Continue reading...</a></p>
+        <!--<p><a href="index-vi.html" class="vns">Hoặc dùng phiên bản Tiếng Việt.</a></p>-->
+    </section>
+
+    <section>
+    </section>
+
+    <section>
+        <img src="assets/img/pill.png" alt="pill" width="80%" class="img-index">
+    </section>
+
+    <br>
+
+    <section class="img-col">
+        <a href="red-pill.html"><img src="assets/img/pill-red.png" alt="pill" width="30%" class="img-co"></a>
+        <a href="cyberpunk/index.html"><img src="assets/img/pill-blue.png" alt="pill" width="30%" class="img-co"></a>
+    </section>
+
+    <hr class="index-hr">
+
+    <footer>
+        <p class="foot">&#169 <span id="yearn"></span> Vietnamese - Project Tu Nguyen - tu-nguyen@tu-nguyen.com - tu-nguyen@tu-nguyen.org</p>
+        <p class="foot">Designed by Tu-Nguyen - Developed by Tu-Nguyen</p>
+        <p class="foot2"><a href="index.html" class="home">Back to top</a></p>
+    </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+        getTime();
+
+        function getTime() {
+            var d = new Date()
+            document.getElementById("times").innerHTML = d
+            setTimeout(getTime, 1000);
+        }
+    </script>
+
+   </body>
+</html>

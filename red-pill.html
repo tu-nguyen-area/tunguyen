@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Black Zone</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/red-pill.css">
+</head>
+<body>
+    <header>
+        <video width="100%" autoplay muted loop class="home-video">
+            <source src="assets/img/grain.mp4" type="video/mp4">
+        </video>
+        <h1><a href="red-pill.html" class="home">Welcome To Black Zone</a></h1>
+        <nav>
+            <h3><a href="black/index.html" class="home home2">Home</a></h3>
+        </nav>
+    </header>
+
+    <footer>
+        <p class="foot">&#169 <span id="yearn"></span> Vietnamese - Project <a href="index.html" class="home">Tu Nguyen</a></p>
+        <p class="foot2"><a href="red-pill.html" class="home">Back to top</a></p>
+    </footer>
+
+    <script>
+        const d = new Date();
+        document.getElementById("yearn").innerHTML = d.getFullYear();
+    </script>
+
+</body>
+</html>
